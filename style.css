@@ -57,7 +57,6 @@ body {
   font-family: var(--ff-open);
   font-size: var(--fs-16);
   line-height: 1.6;
-  max-width: 374px;
   text-align: center;
 }
 
@@ -71,7 +70,9 @@ img {
 
 .container {
   /* height: 100%; */
-  margin: 1.75em auto;
+  max-width: 374px;
+
+  margin: 0 auto;
   padding: 0 2.3em;
 
   display: flex;
@@ -84,6 +85,7 @@ img {
 
 .logo-area {
   width: 100%;
+  margin-top: 1.75em;
 }
 
 .logo-svg-img {
@@ -180,6 +182,7 @@ img {
   margin-top: 2em;
   padding: 0.5em 0;
 }
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -187,3 +190,36 @@ img {
 .attribution a {
   color: hsl(0, 1%, 66%);
 }
+/* 
+@media (min-height: 700px) {
+  .container {
+    align-items: center;
+    height: 95%;
+  }
+
+  .footer {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .main {
+    flex-direction: row;
+  }
+
+  .illustration-area {
+  }
+}
+
+@media (max-width: 1199px) {
+  .container {
+    align-items: center;
+    max-width: 590px;
+
+    height: 95%;
+  }
+} */
